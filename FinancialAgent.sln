@@ -24,6 +24,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialAgent.Agents", "src\FinancialAgent.Agents\FinancialAgent.Agents.csproj", "{D4E5F6G7-H8I9-0123-4567-890123456789}"
 EndProject
 
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialAgent.UI", "src\FinancialAgent.UI", "{E5F6G7H8-I9J0-1234-5678-901234567890}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -20,23 +20,28 @@ An advanced AI-powered financial analysis agent specializing in Indian stock mar
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │  FinancialAgent │    │  FinancialAgent │    │  FinancialAgent │
-│      .Api       │────│  .Infrastructure│────│     .Core       │
-│   (REST API)    │    │  (Data & APIs)  │    │   (Domain)      │
+│      .UI        │────│      .Api       │────│  .Infrastructure│
+│   (React SPA)   │    │   (REST API)    │    │  (Data & APIs)  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                       ┌─────────────────┐
-                       │  FinancialAgent │
-                       │     .Agents     │
-                       │ (Semantic Kernel)│
-                       └─────────────────┘
+                                │                       │
+                       ┌─────────────────┐    ┌─────────────────┐
+                       │  FinancialAgent │    │  FinancialAgent │
+                       │     .Agents     │    │     .Core       │
+                       │ (Semantic Kernel)│    │   (Domain)      │
+                       └─────────────────┘    └─────────────────┘
 ```
 
 ## 🛠️ Technology Stack
 
 | Component | Technology | Status |
 |-----------|------------|--------|
+| **Frontend** | React 18 + TypeScript | ✅ Implemented |
 | **Framework** | .NET 8 | ✅ Implemented |
 | **Database** | Azure Cosmos DB | ✅ Implemented |
+| **UI Framework** | Tailwind CSS + Headless UI | ✅ Implemented |
+| **Charts** | Recharts | ✅ Implemented |
+| **State Management** | React Query | ✅ Implemented |
+| **Build Tool** | Vite | ✅ Implemented |
 | **Caching** | Redis (planned) | ⏳ Future |
 | **AI Framework** | Semantic Kernel 1.0.1 | ✅ Implemented |
 | **NSE Integration** | Custom HTTP Client + Polly | ✅ Implemented |

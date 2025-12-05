@@ -39,6 +39,23 @@ jobs:
     - name: Build solution
       run: dotnet build FinancialAgent.sln --configuration Release --no-restore
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: src/FinancialAgent.UI/package-lock.json
+
+    - name: Install UI dependencies
+      run: |
+        cd src/FinancialAgent.UI
+        npm ci
+
+    - name: Build UI
+      run: |
+        cd src/FinancialAgent.UI
+        npm run build
+
     - name: Run unit tests
       run: dotnet test FinancialAgent.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
@@ -58,6 +75,12 @@ jobs:
       with:
         name: financial-agent-api
         path: ./publish/
+
+    - name: Upload UI artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: financial-agent-ui
+        path: src/FinancialAgent.UI/dist/
 
   security-scan:
     name: Security Scan

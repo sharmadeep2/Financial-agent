@@ -1,6 +1,20 @@
 version: '3.8'
 
 services:
+  # React UI Application
+  financial-agent-ui:
+    build:
+      context: ./src/FinancialAgent.UI
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - financial-agent-api
+    environment:
+      - NODE_ENV=production
+    networks:
+      - financial-agent-network
+
   # Financial Agent API
   financial-agent-api:
     build:
