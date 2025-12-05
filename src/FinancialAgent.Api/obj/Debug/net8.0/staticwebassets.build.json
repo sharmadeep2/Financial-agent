@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "U+dvnookl+sXAF2mVpc0mHlkGIzKNQn0TgWAtKXcuLo=",
+  "Source": "FinancialAgent.Api",
+  "BasePath": "_content/FinancialAgent.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

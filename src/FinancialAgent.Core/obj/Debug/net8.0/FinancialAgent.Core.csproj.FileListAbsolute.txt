@@ -1,0 +1,13 @@
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\bin\Debug\net8.0\FinancialAgent.Core.deps.json
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\bin\Debug\net8.0\FinancialAgent.Core.dll
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\bin\Debug\net8.0\FinancialAgent.Core.pdb
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.csproj.AssemblyReference.cache
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.AssemblyInfoInputs.cache
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.AssemblyInfo.cs
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.csproj.CoreCompileInputs.cache
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.sourcelink.json
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.dll
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\refint\FinancialAgent.Core.dll
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\FinancialAgent.Core.pdb
+c:\Users\sharmadeep\Financial-agent\src\FinancialAgent.Core\obj\Debug\net8.0\ref\FinancialAgent.Core.dll

@@ -1,8 +1,106 @@
-# Financial Agent - AI-Powered Financial Assistant
+# Financial Agent - AI-Powered Stock Market Analysis for Indian Markets
 
 ## 📊 Project Overview
 
-The Financial Agent is an intelligent conversational AI bot designed to help users with financial queries, investment advice, budget planning, and financial education. Built using Microsoft Copilot Studio and integrated with financial APIs and services.
+An advanced AI-powered financial analysis agent specializing in Indian stock markets (NSE & BSE), built with Azure AI Foundry, Semantic Kernel, and modern .NET 8 architecture.
+
+## 🚀 Phase 1 Implementation Status (COMPLETED)
+
+### ✅ Foundation Components
+- **Solution Structure**: Complete .NET 8 solution with clean architecture
+- **Domain Models**: Comprehensive models for stock data, historical data, and technical indicators
+- **NSE API Integration**: Full integration with National Stock Exchange APIs
+- **BSE API Integration**: Complete Bombay Stock Exchange API service
+- **Cosmos DB Repository**: Azure Cosmos DB with optimized partition strategies
+- **Dependency Injection**: Fully configured DI container with Azure best practices
+- **REST API**: Complete market data API with Swagger documentation
+
+### 🏗️ Architecture Implemented
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│  FinancialAgent │    │  FinancialAgent │    │  FinancialAgent │
+│      .Api       │────│  .Infrastructure│────│     .Core       │
+│   (REST API)    │    │  (Data & APIs)  │    │   (Domain)      │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                                │
+                       ┌─────────────────┐
+                       │  FinancialAgent │
+                       │     .Agents     │
+                       │ (Semantic Kernel)│
+                       └─────────────────┘
+```
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Status |
+|-----------|------------|--------|
+| **Framework** | .NET 8 | ✅ Implemented |
+| **Database** | Azure Cosmos DB | ✅ Implemented |
+| **Caching** | Redis (planned) | ⏳ Future |
+| **AI Framework** | Semantic Kernel 1.0.1 | ✅ Implemented |
+| **NSE Integration** | Custom HTTP Client + Polly | ✅ Implemented |
+| **BSE Integration** | Custom HTTP Client + Polly | ✅ Implemented |
+| **Containerization** | Docker | ✅ Implemented |
+| **CI/CD** | GitHub Actions | ✅ Implemented |
+
+## 🚦 Quick Start
+
+### Prerequisites
+- .NET 8 SDK
+- Docker Desktop
+- Azure Cosmos DB Emulator (or Azure Cosmos DB account)
+
+### Run Locally
+```bash
+# Clone repository
+git clone <repository-url>
+cd Financial-agent
+
+# Start dependencies
+docker-compose up -d cosmos-emulator
+
+# Run application
+dotnet run --project src/FinancialAgent.Api
+```
+
+### API Endpoints
+```bash
+# Get NSE stock quote
+GET /api/marketdata/nse/{symbol}
+
+# Get BSE stock quote  
+GET /api/marketdata/bse/{scripCode}
+
+# Get historical data
+GET /api/marketdata/nse/{symbol}/historical?fromDate=2024-01-01&toDate=2024-12-31
+
+# Search stocks
+GET /api/marketdata/nse/search?query=Reliance
+
+# Health check
+GET /health
+```
+
+## 📊 API Examples
+
+### Get Real-time Stock Data
+```bash
+# NSE - Get Reliance stock price
+curl http://localhost:5000/api/marketdata/nse/RELIANCE
+
+# BSE - Get Reliance stock price (scrip code: 500325)
+curl http://localhost:5000/api/marketdata/bse/500325
+```
+
+### Search Stocks
+```bash
+# Search NSE stocks
+curl "http://localhost:5000/api/marketdata/nse/search?query=Infosys"
+
+# Search BSE stocks
+curl "http://localhost:5000/api/marketdata/bse/search?query=TCS"
+```
 
 ## 🎯 Project Objectives
 
